@@ -1,0 +1,21 @@
+version: '3.0'
+
+services:
+  portablevalgrind:
+    container_name: portable_valgrind
+    build: './'
+    privileged: true
+    cap_add:
+      - SYS_ADMIN
+    security_opt:
+      - seccomp:unconfined
+    tmpfs:
+      - /run
+      - /run/lock
+    volumes:
+       - ./dockerSharedFolder:/dockerSharedFolder
+       - /sys/fs/cgroup:/sys/fs/cgroup:ro
+       - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      DISPLAY: $DISPLAY
+    restart: unless-stopped
