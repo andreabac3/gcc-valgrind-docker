@@ -20,6 +20,8 @@ docker exec -it portable_valgrind bash
 The docker-compose.yml provide a folder mounted in the container, it allows to share file between the file system host and container.
 This folder is called 'dockerSharedFolder' and you can find it in the same directory where you run the docker-compose file.
 In the docker container is placed in /dockerSharedFolder
+## Extra
+This container is based on a Debian image build with the SystemD as a init system, it allows you to launch daemon services and other fun things.
 ## Authors
 * **Andrea Bacciu**  [Github profile](https://github.com/andreabac3)
 
