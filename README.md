@@ -1,7 +1,7 @@
 # gcc-valgrind-docker
 
 ## Description
-This docker container allows you to use GCC compiler and memory leak check using Valgrind.
+This docker container allows you to use GCC compiler and memory leak check using Valgrind. <br />
 It's useful when you code in macOS machine for testing your software.
 ## How to use
 
@@ -17,8 +17,8 @@ docker compose-up -d
 docker exec -it portable_valgrind bash
 ```
 ### Shared Folder
-The docker-compose.yml provide a folder mounted in the container, it allows to share file between the file system host and container.
-This folder is called 'dockerSharedFolder' and you can find it in the same directory where you run the docker-compose file.
+The docker-compose.yml provide a folder mounted in the container, it allows to share file between the file system host and container.<br />
+This folder is called 'dockerSharedFolder' and you can find it in the same directory where you run the docker-compose file.<br />
 In the docker container is placed in /dockerSharedFolder
 ## Extra
 This container is based on a Debian image build with the SystemD as a init system, it allows you to launch daemon services and other fun things.
@@ -26,6 +26,6 @@ This container is based on a Debian image build with the SystemD as a init syste
 * **Andrea Bacciu**  [Github profile](https://github.com/andreabac3)
 
 ## Riferimenti
-* **Docker:** [docker.com](https://www.docker.com/)
-base image debian with systemD [dockerhub](https://hub.docker.com/r/jrei/systemd-debian/)
+* **Docker:** [docker.com](https://www.docker.com/)<br />
+base image debian with systemD [dockerhub](https://hub.docker.com/r/jrei/systemd-debian/)<br />
 github of the dockerhub author [github profile](https://github.com/j8r)
