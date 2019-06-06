@@ -27,5 +27,5 @@ This container is based on a Debian image build with the SystemD as a init syste
 
 ## Riferimenti
 * **Docker:** [docker.com](https://www.docker.com/)<br />
-base image debian with systemD [dockerhub](https://hub.docker.com/r/jrei/systemd-debian/)<br />
-github of the dockerhub author [github profile](https://github.com/j8r)
+SystemD Debian base image [dockerhub](https://hub.docker.com/r/jrei/systemd-debian/)<br />
+Base image author [github profile](https://github.com/j8r)
